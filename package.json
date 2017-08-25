@@ -2,7 +2,11 @@
   "name": "ReactPizza",
   "version": "1.0.0",
   "description": "React Tutorial",
-  "main": "server.js",
+  "main": "./PizzaBot/server.js",
+  "scripts": {
+    "start-webpack-server": "webpack-dev-server --hot --inline --colors --progress",
+    "start": "node ./PizzaBot/server.js"
+  },
   "repository": "https://github.com/kennybello/ReactPizza.git",
   "author": "Kenneth Bello",
   "license": "MIT",
@@ -12,7 +16,7 @@
     "jquery": "^2.2.4",
     "react": "15.0.2",
     "react-addons-pure-render-mixin": "^15.0.2",
-    "react-dom": "^15.0.2",
+    "react-dom": "~15.0.2",
     "react-router": "^2.4.0",
     "restify": "^4.0.4"
   },
